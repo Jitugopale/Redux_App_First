@@ -1,6 +1,8 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
+    const state = useSelector(state => state.amount) //jo state us krna hai vo use kr skta ho
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
